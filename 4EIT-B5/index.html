@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta 5="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звуци инструмената | Почетна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Основна школа "Соња Маринковић"</h1>
+
+    <div class="nav">
+        <a href="index.html" class="active">Почетна</a>
+        <a href="oautoru.html">О аутору</a>
+        <a href="uputstvo.html">Упутство</a>
+    </div>
+
+    <h2 class="title-page">Звуци инструмената</h2>
+    <div class="side-bar-text">
+        <p>Музичка култура</p>
+    </div>
+    <div class="container">  
+        <table>    
+            <tr>
+                <td>Назив инструмента</td>
+                <td>Слика инструмента</td>
+                <td>Звук инструмента</td>
+            </tr>
+            <tr>
+                <td class="td-title">Гитара</td>
+                <td><a href="https://sr.wikipedia.org/wiki/Гитара" target="_blank"><img class="img" src="images/guitar.jpg"></a></td>
+                <td>
+                    <img class="speaker"
+                    id="guitar"
+                    onmouseover="playSound(id)"
+                    onmouseout="stopSound(id)"
+                    src="images/speaker.png">
+                    <a class="more" href="./pages/zicani.html"
+                    onclick="window.open('./pages/zicani.html', 
+                         'newwindow', 
+                         'width=300,height=250'); 
+              return false;">Сазнај више</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-title">Виолина</td>
+                <td><a href="https://sr.wikipedia.org/wiki/Виолина" target="_blank"><img class="img" src="images/violin.jpg"></a></td>
+                <td>
+                    <img class="speaker"
+                    id="violin"
+                    onmouseover="playSound(id)"
+                    onmouseout="stopSound(id)"
+                    src="images/speaker.png">
+                    <a class="more" href="./pages/zicani.html"
+                    onclick="window.open('./pages/zicani.html', 
+                    'newwindow', 
+                    'width=300,height=250'); 
+         return false;">Сазнај више</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-title">Клавир</td>
+                <td><a href="https://sr.wikipedia.org/wiki/Клавир" target="_blank"><img class="img" src="images/piano.jpg"></a></td>
+                <td>
+                    <img class="speaker"
+                    id="piano"
+                    onmouseover="playSound(id)"
+                    onmouseout="stopSound(id)"
+                    src="images/speaker.png">
+                    <a class="more" href="./pages/dirke.html"
+                    onclick="window.open('./pages/dirke.html', 
+                    'newwindow', 
+                    'width=300,height=250'); 
+         return false;">Сазнај више</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-title">Бубњеви</td>
+                <td><a href="https://sr.wikipedia.org/wiki/Бубњеви" target="_blank"><img class="img" src="images/drums.gif"></a></td>
+                <td>
+                    <img class="speaker"
+                    id="drums"
+                    onmouseover="playSound(id)"
+                    onmouseout="stopSound(id)"
+                    src="images/speaker.png">
+                    <a class="more" href="./pages/udaraljke.html"
+                    onclick="window.open('./pages/udaraljke.html', 
+                    'newwindow', 
+                    'width=300,height=250'); 
+         return false;">Сазнај више</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-title">Хармоника</td>
+                <td><a href="https://sr.wikipedia.org/wiki/Хармоника" target="_blank"><img class="img" src="images/harmonika.jpg"></a></td>
+                <td>
+                    <img class="speaker"
+                    id="harmonika"
+                    onmouseover="playSound(id)"
+                    onmouseout="stopSound(id)"
+                    src="images/speaker.png">
+                    <a class="more" href="./pages/dirke.html"
+                    onclick="window.open('./pages/dirke.html', 
+                    'newwindow', 
+                    'width=300,height=250'); 
+         return false;">Сазнај више</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-title">Контрафагот</td>
+                <td><a href="https://sr.wikipedia.org/wiki/Контрафагот" target="_blank"><img class="img" src="images/contrabassoon.jpg"></a></td>
+                <td>
+                    <img class="speaker"
+                    id="contrabassoon"
+                    onmouseover="playSound(id)"
+                    onmouseout="stopSound(id)"
+                    src="images/speaker.png">
+                    <a class="more" href="./pages/duvacki.html"
+                    onclick="window.open('./pages/duvacki.html', 
+                    'newwindow', 
+                    'width=300,height=250'); 
+                    return false;">Сазнај више</a>
+                </td>
+            </tr>            
+        </table> 
+    </div>
+
+    <footer>Copyright © Основна школа "Соња Маринковић"</footer>
+    <audio src="./sounds/contrafagot.mp3" id="contrafagotZvuk"></audio>
+    <audio src="./sounds/drums.mp3" id="drumsZvuk"></audio>
+    <audio src="./sounds/guitar.mp3" id="guitarZvuk"></audio>
+    <audio src="./sounds/harmonica.mp3" id="harmonicaZvuk"></audio>
+    <audio src="./sounds/piano.mp3" id="pianoZvuk"></audio>
+    <audio src="./sounds/violin.mp3" id="violinZvuk"></audio>
+    <script src="main.js"></script>
+</body>
+</html>
